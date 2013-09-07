@@ -1,0 +1,5 @@
+vhdtdtfi -lib work C:/Users/Kenneth/Laboratorio2/Timer.v -lang verilog -prj Laboratorio2 -o Timer.spl -module Timer -template C:/Xilinx/14.6/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 Timer.spl C:/Users/Kenneth/Laboratorio2/Timer.sym 
+vhdtdtfi -lang verilog -prj Laboratorio2 -o C:/Users/Kenneth/Laboratorio2/Timer.tfi -lib work C:/Users/Kenneth/Laboratorio2//Timer.v -module Timer -template C:/Xilinx/14.6/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+vhdtdtfi -lib work C:/Users/Kenneth/Laboratorio2/Timer.v -lang verilog -prj Laboratorio2 -o Timer.spl -module Timer -template C:/Xilinx/14.6/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 Timer.spl C:/Users/Kenneth/Laboratorio2/Timer.sym 

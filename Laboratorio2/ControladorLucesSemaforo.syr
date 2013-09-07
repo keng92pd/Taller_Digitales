@@ -1,0 +1,610 @@
+Release 14.6 - xst P.68d (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Reading design: ControladorLucesSemaforo.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ControladorLucesSemaforo.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ControladorLucesSemaforo"
+Output Format                      : NGC
+Target Device                      : xc3s200-4-ft256
+
+---- Source Options
+Top Module Name                    : ControladorLucesSemaforo
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "WalkRegister.v" in library work
+Compiling verilog file "Timer.v" in library work
+Module <WalkRegister> compiled
+Compiling verilog file "Sincronizador.v" in library work
+Module <Timer> compiled
+Compiling verilog file "ParametrosTemporales.v" in library work
+Module <Sincronizador> compiled
+Compiling verilog file "MaquinaEstadosFinitos.v" in library work
+Module <ParametrosTemporales> compiled
+Compiling verilog file "DivisorFrecuencia.v" in library work
+Module <MaquinaEstadosFinitos> compiled
+Compiling verilog file "ControladorLucesSemaforo.v" in library work
+Module <DivisorFrecuencia> compiled
+Module <ControladorLucesSemaforo> compiled
+No errors in compilation
+Analysis of file <"ControladorLucesSemaforo.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <ControladorLucesSemaforo> in library <work>.
+
+Analyzing hierarchy for module <DivisorFrecuencia> in library <work>.
+
+Analyzing hierarchy for module <Timer> in library <work>.
+
+Analyzing hierarchy for module <Sincronizador> in library <work>.
+
+Analyzing hierarchy for module <WalkRegister> in library <work>.
+
+Analyzing hierarchy for module <ParametrosTemporales> in library <work>.
+
+Analyzing hierarchy for module <MaquinaEstadosFinitos> in library <work> with parameters.
+	s0 = "00000"
+	s1 = "00001"
+	s10 = "01010"
+	s11 = "01011"
+	s12 = "01100"
+	s13 = "01101"
+	s14 = "01110"
+	s15 = "01111"
+	s16 = "10000"
+	s17 = "10001"
+	s18 = "10010"
+	s19 = "10011"
+	s2 = "00010"
+	s20 = "10100"
+	s21 = "10101"
+	s22 = "10110"
+	s23 = "10111"
+	s3 = "00011"
+	s4 = "00100"
+	s5 = "00101"
+	s6 = "00110"
+	s7 = "00111"
+	s8 = "01000"
+	s9 = "01001"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <ControladorLucesSemaforo>.
+Module <ControladorLucesSemaforo> is correct for synthesis.
+ 
+Analyzing module <DivisorFrecuencia> in library <work>.
+Module <DivisorFrecuencia> is correct for synthesis.
+ 
+Analyzing module <Timer> in library <work>.
+Module <Timer> is correct for synthesis.
+ 
+Analyzing module <Sincronizador> in library <work>.
+Module <Sincronizador> is correct for synthesis.
+ 
+Analyzing module <WalkRegister> in library <work>.
+Module <WalkRegister> is correct for synthesis.
+ 
+Analyzing module <ParametrosTemporales> in library <work>.
+Module <ParametrosTemporales> is correct for synthesis.
+ 
+Analyzing module <MaquinaEstadosFinitos> in library <work>.
+	s0 = 5'b00000
+	s1 = 5'b00001
+	s10 = 5'b01010
+	s11 = 5'b01011
+	s12 = 5'b01100
+	s13 = 5'b01101
+	s14 = 5'b01110
+	s15 = 5'b01111
+	s16 = 5'b10000
+	s17 = 5'b10001
+	s18 = 5'b10010
+	s19 = 5'b10011
+	s2 = 5'b00010
+	s20 = 5'b10100
+	s21 = 5'b10101
+	s22 = 5'b10110
+	s23 = 5'b10111
+	s3 = 5'b00011
+	s4 = 5'b00100
+	s5 = 5'b00101
+	s6 = 5'b00110
+	s7 = 5'b00111
+	s8 = 5'b01000
+	s9 = 5'b01001
+Module <MaquinaEstadosFinitos> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <DivisorFrecuencia>.
+    Related source file is "DivisorFrecuencia.v".
+    Found 22-bit down counter for signal <contador>.
+    Found 1-bit register for signal <segundero>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <DivisorFrecuencia> synthesized.
+
+
+Synthesizing Unit <Timer>.
+    Related source file is "Timer.v".
+    Found 4-bit comparator equal for signal <tiempo_expiro$cmp_eq0000> created at line 47.
+    Found 4-bit up counter for signal <tiempoTranscurrido>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 Comparator(s).
+Unit <Timer> synthesized.
+
+
+Synthesizing Unit <Sincronizador>.
+    Related source file is "Sincronizador.v".
+    Using one-hot encoding for signal <opcion_selecionada>.
+    Found 4-bit register for signal <salida>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <Sincronizador> synthesized.
+
+
+Synthesizing Unit <WalkRegister>.
+    Related source file is "WalkRegister.v".
+    Found 1-bit register for signal <valor_walk_actual>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <WalkRegister> synthesized.
+
+
+Synthesizing Unit <ParametrosTemporales>.
+    Related source file is "ParametrosTemporales.v".
+    Found 4-bit register for signal <tbase>.
+    Found 4-bit register for signal <text>.
+    Found 4-bit register for signal <tyel>.
+    Found 4-bit 4-to-1 multiplexer for signal <valor_salida>.
+    Summary:
+	inferred  12 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+Unit <ParametrosTemporales> synthesized.
+
+
+Synthesizing Unit <MaquinaEstadosFinitos>.
+    Related source file is "MaquinaEstadosFinitos.v".
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 24                                             |
+    | Transitions        | 33                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 10                                             |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00000                                          |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <MaquinaEstadosFinitos> synthesized.
+
+
+Synthesizing Unit <ControladorLucesSemaforo>.
+    Related source file is "ControladorLucesSemaforo.v".
+Unit <ControladorLucesSemaforo> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 22-bit down counter                                   : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 6
+ 1-bit register                                        : 2
+ 4-bit register                                        : 4
+# Comparators                                          : 1
+ 4-bit comparator equal                                : 1
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <maqEstados/state/FSM> on signal <state[1:24]> with one-hot encoding.
+-----------------------------------
+ State | Encoding
+-----------------------------------
+ 00000 | 000000000000000000000001
+ 00001 | 000000000000000000000010
+ 00010 | 000000000000000000000100
+ 00011 | 000000000000000000001000
+ 00100 | 000000000000000000010000
+ 00101 | 000000000000000000100000
+ 00110 | 000000000000000001000000
+ 00111 | 000000000000000010000000
+ 01000 | 000000000000000100000000
+ 01001 | 000000000000001000000000
+ 01010 | 000000000000010000000000
+ 01011 | 000000000000100000000000
+ 01100 | 000000000001000000000000
+ 01101 | 000000000010000000000000
+ 01110 | 000000001000000000000000
+ 01111 | 000000010000000000000000
+ 10000 | 000000000100000000000000
+ 10001 | 000000100000000000000000
+ 10010 | 000001000000000000000000
+ 10011 | 000010000000000000000000
+ 10100 | 001000000000000000000000
+ 10101 | 010000000000000000000000
+ 10110 | 100000000000000000000000
+ 10111 | 000100000000000000000000
+-----------------------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Counters                                             : 2
+ 22-bit down counter                                   : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 18
+ Flip-Flops                                            : 18
+# Comparators                                          : 1
+ 4-bit comparator equal                                : 1
+# Multiplexers                                         : 4
+ 1-bit 4-to-1 multiplexer                              : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ControladorLucesSemaforo> ...
+
+Optimizing unit <Sincronizador> ...
+
+Optimizing unit <ParametrosTemporales> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ControladorLucesSemaforo, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 68
+ Flip-Flops                                            : 68
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : ControladorLucesSemaforo.ngr
+Top Level Output File Name         : ControladorLucesSemaforo
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 18
+
+Cell Usage :
+# BELS                             : 152
+#      GND                         : 1
+#      INV                         : 23
+#      LUT1                        : 1
+#      LUT2                        : 9
+#      LUT2_L                      : 2
+#      LUT3                        : 15
+#      LUT3_D                      : 3
+#      LUT4                        : 40
+#      LUT4_D                      : 1
+#      LUT4_L                      : 5
+#      MUXCY                       : 27
+#      MUXF5                       : 2
+#      VCC                         : 1
+#      XORCY                       : 22
+# FlipFlops/Latches                : 68
+#      FD                          : 12
+#      FDC                         : 4
+#      FDE                         : 1
+#      FDR                         : 29
+#      FDR_1                       : 4
+#      FDRE                        : 1
+#      FDRS                        : 2
+#      FDRSE                       : 6
+#      FDS                         : 9
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 17
+#      IBUF                        : 10
+#      OBUF                        : 7
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-4 
+
+ Number of Slices:                       56  out of   1920     2%  
+ Number of Slice Flip Flops:             68  out of   3840     1%  
+ Number of 4 input LUTs:                 99  out of   3840     2%  
+ Number of IOs:                          18
+ Number of bonded IOBs:                  18  out of    173    10%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+----------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                  | Load  |
+-----------------------------------+----------------------------------------+-------+
+clk                                | BUFGP                                  | 64    |
+divisor/segundero                  | NONE(temporizador/tiempoTranscurrido_0)| 4     |
+-----------------------------------+----------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+----------------------------------------+-------+
+Control Signal                     | Buffer(FF name)                        | Load  |
+-----------------------------------+----------------------------------------+-------+
+start_timer_inv(start_timer_inv:O) | NONE(temporizador/tiempoTranscurrido_0)| 4     |
+-----------------------------------+----------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 9.766ns (Maximum Frequency: 102.396MHz)
+   Minimum input arrival time before clock: 4.474ns
+   Maximum output required time after clock: 10.920ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 9.766ns (frequency: 102.396MHz)
+  Total number of paths / destination ports: 1815 / 116
+-------------------------------------------------------------------------
+Delay:               9.766ns (Levels of Logic = 5)
+  Source:            maqEstados/state_FSM_FFd1 (FF)
+  Destination:       maqEstados/state_FSM_FFd1 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: maqEstados/state_FSM_FFd1 to maqEstados/state_FSM_FFd1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRSE:C->Q            2   0.720   1.216  maqEstados/state_FSM_FFd1 (maqEstados/state_FSM_FFd1)
+     LUT4_L:I0->LO         1   0.551   0.126  maqEstados/state_FSM_Out2_SW0 (N10)
+     LUT4:I3->O            4   0.551   1.112  maqEstados/state_FSM_Out2 (Intervalo<0>)
+     LUT4:I1->O            1   0.551   0.827  parametros/mux21 (Valor<0>)
+     LUT4:I3->O            7   0.551   1.405  time_expired426 (time_expired426)
+     LUT2:I0->O            6   0.551   1.003  time_expired454 (time_expired)
+     FDRSE:CE                  0.602          maqEstados/state_FSM_FFd1
+    ----------------------------------------
+    Total                      9.766ns (4.077ns logic, 5.689ns route)
+                                       (41.7% logic, 58.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'divisor/segundero'
+  Clock period: 3.196ns (frequency: 312.891MHz)
+  Total number of paths / destination ports: 10 / 4
+-------------------------------------------------------------------------
+Delay:               3.196ns (Levels of Logic = 1)
+  Source:            temporizador/tiempoTranscurrido_0 (FF)
+  Destination:       temporizador/tiempoTranscurrido_0 (FF)
+  Source Clock:      divisor/segundero falling
+  Destination Clock: divisor/segundero falling
+
+  Data Path: temporizador/tiempoTranscurrido_0 to temporizador/tiempoTranscurrido_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              5   0.720   0.921  temporizador/tiempoTranscurrido_0 (temporizador/tiempoTranscurrido_0)
+     INV:I->O              1   0.551   0.801  temporizador/Mcount_tiempoTranscurrido_xor<0>11_INV_0 (Result<0>1)
+     FDC:D                     0.203          temporizador/tiempoTranscurrido_0
+    ----------------------------------------
+    Total                      3.196ns (1.474ns logic, 1.722ns route)
+                                       (46.1% logic, 53.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 52 / 20
+-------------------------------------------------------------------------
+Offset:              4.474ns (Levels of Logic = 3)
+  Source:            Time_Parameter_Selector<1> (PAD)
+  Destination:       parametros/text_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: Time_Parameter_Selector<1> to parametros/text_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.821   1.246  Time_Parameter_Selector_1_IBUF (Time_Parameter_Selector_1_IBUF)
+     LUT3_D:I0->O          3   0.551   1.102  parametros/text_mux0000<2>11 (parametros/N2)
+     LUT4:I1->O            1   0.551   0.000  parametros/text_mux0000<0>1 (parametros/text_mux0000<0>)
+     FD:D                      0.203          parametros/text_0
+    ----------------------------------------
+    Total                      4.474ns (2.126ns logic, 2.348ns route)
+                                       (47.5% logic, 52.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 54 / 7
+-------------------------------------------------------------------------
+Offset:              10.920ns (Levels of Logic = 4)
+  Source:            maqEstados/state_FSM_FFd18 (FF)
+  Destination:       luces<1> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: maqEstados/state_FSM_FFd18 to luces<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRS:C->Q             8   0.720   1.422  maqEstados/state_FSM_FFd18 (maqEstados/state_FSM_FFd18)
+     LUT4:I0->O            1   0.551   0.000  maqEstados/state_FSM_Out8111 (maqEstados/state_FSM_Out8111)
+     MUXF5:I0->O           1   0.360   0.801  maqEstados/state_FSM_Out811_f5 (maqEstados/state_FSM_Out811)
+     MUXF5:S->O            1   0.621   0.801  maqEstados/state_FSM_Out813_f5 (luces_1_OBUF)
+     OBUF:I->O                 5.644          luces_1_OBUF (luces<1>)
+    ----------------------------------------
+    Total                     10.920ns (7.896ns logic, 3.024ns route)
+                                       (72.3% logic, 27.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.16 secs
+ 
+--> 
+
+Total memory usage is 204892 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

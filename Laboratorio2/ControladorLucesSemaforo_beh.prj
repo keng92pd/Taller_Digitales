@@ -1,0 +1,8 @@
+verilog work "WalkRegister.v"
+verilog work "Timer.v"
+verilog work "Sincronizador.v"
+verilog work "ParametrosTemporales.v"
+verilog work "MaquinaEstadosFinitos.v"
+verilog work "DivisorFrecuencia.v"
+verilog work "ControladorLucesSemaforo.v"
+verilog work "D:/Xilinx/14.6/ISE_DS/ISE//verilog/src/glbl.v"

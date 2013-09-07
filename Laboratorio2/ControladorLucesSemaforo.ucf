@@ -1,0 +1,21 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "luces[6]" LOC = P11;
+NET "luces[5]" LOC = P12;
+NET "luces[4]" LOC = N12;
+NET "luces[3]" LOC = P13;
+NET "luces[2]" LOC = N14;
+NET "luces[1]" LOC = L12;
+NET "luces[0]" LOC = P14;
+NET "Time_Parameter_Selector[1]" LOC = K13;
+NET "Time_Parameter_Selector[0]" LOC = K14;
+NET "Time_Value[3]" LOC = J13;
+NET "Time_Value[2]" LOC = J14;
+NET "Time_Value[1]" LOC = H13;
+NET "Time_Value[0]" LOC = H14;
+NET "clk" LOC = T9;
+NET "Reprogram" LOC = L14;
+NET "Reset" LOC = L13;
+NET "Sensor" LOC = F12;
+NET "Walk_Request" LOC = M14;

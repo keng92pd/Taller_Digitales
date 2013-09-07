@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator P.68d
+# Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION P.68d
+DATE            09/04/2013 - 19:54
+SOURCE          C:\Users\Zeck\Desktop\Laboratorio2\Spartan3.mcs
+DEVICE          XCF02S
+DATA_WIDTH      8
+FILL_DATA       0xFF
+SIGNATURE       0x02007BFD
+START_ADDRESS   0x00000000 END_ADDRESS 0x0001FF87 DIRECTION_UP   "C:/Users/Zeck/Desktop/Laboratorio2/controladorlucessemaforo_cclktemp.bit" 3s200ft256

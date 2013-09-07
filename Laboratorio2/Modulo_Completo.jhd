@@ -1,0 +1,13 @@
+MODULE Modulo_Completo
+	SUBMODULE DivisorFrecuencia
+		INSTANCE XLXI_1
+	SUBMODULE MaquinaEstadosFinitos
+		INSTANCE XLXI_2
+	SUBMODULE ParametrosTemporales
+		INSTANCE XLXI_3
+	SUBMODULE Sincronizador
+		INSTANCE XLXI_4
+	SUBMODULE Timer
+		INSTANCE XLXI_5
+	SUBMODULE WalkRegister
+		INSTANCE XLXI_6

@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/Kenneth/Laboratorio2/ParametrosTemporales.v -lang verilog -prj Laboratorio2 -o ParametrosTemporales.spl -module ParametrosTemporales -template C:/Xilinx/14.6/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 ParametrosTemporales.spl C:/Users/Kenneth/Laboratorio2/ParametrosTemporales.sym 
