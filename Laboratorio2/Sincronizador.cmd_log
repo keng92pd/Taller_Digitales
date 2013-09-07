@@ -1,2 +1,2 @@
-vhdtdtfi -lib work C:/Users/Kenneth/Laboratorio2/Sincronizador.v -lang verilog -prj Laboratorio2 -o Sincronizador.spl -module Sincronizador -template C:/Xilinx/14.6/ISE_DS/ISE//data/splveri.tft -deleteonerror 
-spl2sym -intstyle ise -family spartan3 Sincronizador.spl C:/Users/Kenneth/Laboratorio2/Sincronizador.sym 
+xst -intstyle ise -ifn "C:/Users/Kenneth/Laboratorio2/Sincronizador.xst" -ofn "C:/Users/Kenneth/Laboratorio2/Sincronizador.syr" 
+xst -intstyle ise -ifn "C:/Users/Kenneth/Laboratorio2/Sincronizador.xst" -ofn "C:/Users/Kenneth/Laboratorio2/Sincronizador.syr" 

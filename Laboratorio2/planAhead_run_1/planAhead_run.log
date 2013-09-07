@@ -29,12 +29,9 @@ WARNING:NetListWriters:298 - No output is written to
 Processing design ...
    Preping design's networks ...
    Preping design's macros ...
-WARNING:NetListWriters:306 - Signal bus maqEstados/luces_mux0000<6 : 1> on block
-   ControladorLucesSemaforo is not reconstructed, because there are some missing
-   bus signals.
   finished :Prep
 Writing EDIF netlist file ControladorLucesSemaforo.edif ...
-ngc2edif: Total memory usage is 78532 kilobytes
+ngc2edif: Total memory usage is 79428 kilobytes
 
 Parsing EDIF File [./planAhead_run_1/Laboratorio2.data/cache/ControladorLucesSemaforo_ngc_zx.edif]
 Finished Parsing EDIF File [./planAhead_run_1/Laboratorio2.data/cache/ControladorLucesSemaforo_ngc_zx.edif]
@@ -54,9 +51,11 @@ Finished Parsing UCF File [C:/Users/Kenneth/Laboratorio2/ControladorLucesSemafor
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Phase 0 | Netlist Checksum: 5ac36928
-link_design: Time (s): elapsed = 00:00:19 . Memory (MB): peak = 591.473 ; gain = 138.027
+Phase 0 | Netlist Checksum: c36943eb
+link_design: Time (s): elapsed = 00:00:17 . Memory (MB): peak = 585.242 ; gain = 133.199
+set_property package_pin "" [get_ports [list  prueba]]
+save_constraints
 exit
 ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
-INFO: [Common 17-206] Exiting PlanAhead at Wed Sep 04 09:03:54 2013...
+INFO: [Common 17-206] Exiting PlanAhead at Fri Sep 06 02:21:27 2013...
 INFO: [Common 17-83] Releasing license: PlanAhead

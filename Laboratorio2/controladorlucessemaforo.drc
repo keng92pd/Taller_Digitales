@@ -1,7 +1,7 @@
-Release 14.6 Drc P.68d (nt)
+Release 14.6 Drc P.68d (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Wed Sep 04 20:42:44 2013
+Sat Sep 07 00:58:22 2013
 
 drc -z ControladorLucesSemaforo.ncd ControladorLucesSemaforo.pcf
 

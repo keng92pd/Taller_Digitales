@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Kenneth\Laboratorio2\ParametrosTemporales.ncd
+OUTFILE=C:\Users\Kenneth\Laboratorio2\ParametrosTemporales.bit
+FAMILY=Spartan3
+PART=xc3s200-4ft256
+WORKINGDIR=C:\Users\Kenneth\Laboratorio2
+LICENSE=WebPack
+USER_INFO=210784013_0_0_570

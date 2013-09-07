@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=C:\Users\Zeck\Desktop\Laboratorio2\ControladorLucesSemaforo.ncd
-OUTFILE=C:\Users\Zeck\Desktop\Laboratorio2\ControladorLucesSemaforo.bit
+INFILE=C:\Users\Kenneth\Laboratorio2\ControladorLucesSemaforo.ncd
+OUTFILE=C:\Users\Kenneth\Laboratorio2\ControladorLucesSemaforo.bit
 FAMILY=Spartan3
 PART=xc3s200-4ft256
-WORKINGDIR=C:\Users\Zeck\Desktop\Laboratorio2
+WORKINGDIR=C:\Users\Kenneth\Laboratorio2
 LICENSE=WebPack
-USER_INFO=210786374_0_0_854
+USER_INFO=210784013_0_0_570

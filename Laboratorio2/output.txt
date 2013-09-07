@@ -1,9 +1,0 @@
-Storage Target: Xilinx Flash/PROM
-Storage Family: xc17
-xc1718d          [17 K]
-FF
-Spartan3
-C:\Users\Zeck\Desktop\Laboratorio2/
-
-MCS
-No

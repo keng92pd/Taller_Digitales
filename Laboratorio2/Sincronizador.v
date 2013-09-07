@@ -22,31 +22,31 @@ module Sincronizador(
     input clk, 
     input [3:0] senales_asincronas, //reset_asincrono,sensor_asincrono,walk_request_asincrono,reprogram_asincrono
 	 output [3:0] senales_sincronas //reset_sincrono,sensor_sincrono,walk_request_sincrono,reprogram_sincrono
-    );
+	 );
+/*
+Este módulo se encarga de sincronizar cada señal asincrónica para ser leída en flanco positivo de reloj	 
+*/
 
-reg [2:0] opcion_selecionada; //0 = ninguna, 1 = reset, 2 = sensor, 3 = walk_request, 4 = reprogram
+reg [3:0] opcion_selecionada; 
 reg [3:0] salida;
+wire resetAsincronico;
+wire sensorAsincronico;
+wire walkRequestAsincronico;
+wire reprogramAsincronico;
+Debounce antirrebote1 (senales_asincronas[0], clk, senales_asincronas[0], resetAsincronico);
+Debounce antirrebote2 (senales_asincronas[0], clk, senales_asincronas[1], sensorAsincronico);
+Debounce antirrebote3 (senales_asincronas[0], clk, senales_asincronas[2], walkRequestAsincronico);
+Debounce antirrebote4 (senales_asincronas[0], clk, senales_asincronas[3], reprogramAsincronico);
 
 always@(senales_asincronas)
 begin
-	case (senales_asincronas)
-		4'b1000:opcion_selecionada = 3'b001;
-		4'b0100:opcion_selecionada = 3'b010;
-		4'b0010:opcion_selecionada = 3'b011;
-		4'b0001:opcion_selecionada = 3'b100;
-		default: opcion_selecionada = 3'b000;
-	endcase
+	opcion_selecionada = {reprogramAsincronico, walkRequestAsincronico,
+								sensorAsincronico, resetAsincronico}; //Si alguna señal cambia, se guarda el cambio
 end
 
 always@(negedge clk)
 begin
-	case (opcion_selecionada) 
-		3'b001: salida <= 4'b1000;
-		3'b010: salida <= 4'b0100;
-		3'b011: salida <= 4'b0010;
-		3'b100: salida <= 4'b0001;
-		default: salida <= 4'b0000;
-	endcase
+	salida <= opcion_selecionada; //Se traslada a la salida el valor guardado en el cambio
 end
 
 assign senales_sincronas = salida;

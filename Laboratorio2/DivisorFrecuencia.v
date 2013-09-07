@@ -18,32 +18,42 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module DivisorFrecuencia(reloj, segunderoSalida);
-//Se divide un reloj de 50Hz en señales periodicas de 1Hz
-input reloj; 
-output segunderoSalida;
-reg segundero;
-reg [21:0] contador;
+/*
+Este módulo toma como entrada un reloj de 50 MHz y tiene como salida
+un reloj de 1Hz
+*/ 
+module DivisorFrecuencia(reloj, segunderoSalida, reset_Sincronico); //Se divide un reloj de 50MHz en señales periodicas de 1Hz
+input reloj; //El reloj de 50 MHz
+input reset_Sincronico; //Reset del módulo
+output segunderoSalida; //Salida de un reloj
+reg segundero; //Registro que permite la manipulación de la salida
+reg [24:0] contador; //Registro que permite contar los flancos positivos de reloj
 
 initial
 begin
-contador = 22'b1001100010010110100000;
-segundero = 1'b0;
-end  
-
+segundero = 0;
+contador = 0;
+end
 always @ (posedge reloj)
 begin 
-	if(contador == 22'b0000000000000000000000) 
+	if(contador == 25000000) //Verifica si ya se alcanzó medio segundo
 		begin
-		if (segundero==1'b0)
-			segundero <= 1'b1; 
+		if (segundero==1'b0) 
+			segundero <= 1'b1; //Si el reloj de 1Hz estaba en 0 se cambia a 1
 			else
-			segundero <= 1'b0; 
-			contador <= 22'b1001100010010110100000; // reinicia el contador
+			segundero <= 1'b0; //Si el reloj de 1Hz estaba en 1 se cambia a 0
+		contador <= 0; // reinicia el contador
 		end
-		else 
-		contador <= contador-1'b1; // disminuye contador
+	else 
+		contador <= contador+1; // aumenta el contador en uno
+	if (reset_Sincronico) //Si se da un reset del módulo
+	begin
+		segundero <= 1'b0; //Se reinicia el reloj de 1Hz
+		contador <= 0;	//Se reinicia la cuenta
+	end
 end
+
+
 
 assign segunderoSalida = segundero;
 

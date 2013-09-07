@@ -55,7 +55,7 @@ END Pruebas;
    -- No clocks detected in port list. Replace <clock> below with 
    -- appropriate port name 
  
-   constant reloj_period : time := 200 ns;
+   constant reloj_period : time := 20 ns;
  
 BEGIN
  
@@ -79,9 +79,8 @@ BEGIN
    stim_proc: process
    begin		
       -- hold reset state for 100 ns.
-      wait for 100 ns;	
-
-      wait for reloj_period*10;
+		
+      reset_Sincronico <= '0';
 
       -- insert stimulus here 
 

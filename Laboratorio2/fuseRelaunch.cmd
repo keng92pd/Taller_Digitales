@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "simprims_ver" -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/Zeck/Desktop/Laboratorio2/PruebasGeneral_isim_map.exe" -prj "C:/Users/Zeck/Desktop/Laboratorio2/PruebasGeneral_map.prj" "work.PruebasGeneral" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/Kenneth/Laboratorio2/PruebasMaquinaEstados_isim_beh.exe" -prj "C:/Users/Kenneth/Laboratorio2/PruebasMaquinaEstados_beh.prj" "work.PruebasMaquinaEstados" "work.glbl" 

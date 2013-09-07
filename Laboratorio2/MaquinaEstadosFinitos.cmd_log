@@ -1,2 +1,0 @@
-vhdtdtfi -lib work C:/Users/Kenneth/Laboratorio2/MaquinaEstadosFinitos.v -lang verilog -prj Laboratorio2 -o MaquinaEstadosFinitos.spl -module MaquinaEstadosFinitos -template C:/Xilinx/14.6/ISE_DS/ISE//data/splveri.tft -deleteonerror 
-spl2sym -intstyle ise -family spartan3 MaquinaEstadosFinitos.spl C:/Users/Kenneth/Laboratorio2/MaquinaEstadosFinitos.sym 

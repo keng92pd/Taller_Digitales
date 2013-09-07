@@ -1,10 +1,10 @@
 --------------------------------------------------------------------------------
-Release 14.6 Trace  (nt)
+Release 14.6 Trace  (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-D:\Xilinx\14.6\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 4 -n
-3 -fastpaths -xml ControladorLucesSemaforo.twx ControladorLucesSemaforo.ncd -o
-ControladorLucesSemaforo.twr ControladorLucesSemaforo.pcf -ucf
+C:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml ControladorLucesSemaforo.twx ControladorLucesSemaforo.ncd
+-o ControladorLucesSemaforo.twr ControladorLucesSemaforo.pcf -ucf
 ControladorLucesSemaforo.ucf
 
 Design file:              ControladorLucesSemaforo.ncd
@@ -46,16 +46,17 @@ Setup/Hold to clock clk
                           |Max Setup to|Max Hold to |                  | Clock  |
 Source                    | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 --------------------------+------------+------------+------------------+--------+
-Reprogram                 |    1.383(F)|    1.005(F)|clk_BUFGP         |   0.000|
-Reset                     |    1.006(F)|    0.732(F)|clk_BUFGP         |   0.000|
-Sensor                    |    1.953(F)|    0.125(F)|clk_BUFGP         |   0.000|
-Time_Parameter_Selector<0>|    2.077(R)|    0.569(R)|clk_BUFGP         |   0.000|
-Time_Parameter_Selector<1>|    2.033(R)|    0.466(R)|clk_BUFGP         |   0.000|
-Time_Value<0>             |    1.468(R)|    0.362(R)|clk_BUFGP         |   0.000|
-Time_Value<1>             |    1.896(R)|    0.206(R)|clk_BUFGP         |   0.000|
-Time_Value<2>             |    1.710(R)|    0.599(R)|clk_BUFGP         |   0.000|
-Time_Value<3>             |    1.490(R)|    0.539(R)|clk_BUFGP         |   0.000|
-Walk_Request              |    1.857(F)|    0.593(F)|clk_BUFGP         |   0.000|
+Reprogram                 |    4.430(R)|   -0.360(R)|clk_BUFGP         |   0.000|
+Reset                     |    6.575(R)|   -0.024(R)|clk_BUFGP         |   0.000|
+Sensor                    |    5.529(R)|   -0.129(R)|clk_BUFGP         |   0.000|
+Time_Parameter_Selector[0]|    5.473(R)|   -2.120(R)|clk_BUFGP         |   0.000|
+Time_Parameter_Selector[1]|    5.102(R)|   -1.505(R)|clk_BUFGP         |   0.000|
+Time_Value[0]             |    3.182(R)|   -0.534(R)|clk_BUFGP         |   0.000|
+Time_Value[1]             |    2.774(R)|   -0.478(R)|clk_BUFGP         |   0.000|
+Time_Value[2]             |    3.579(R)|   -0.844(R)|clk_BUFGP         |   0.000|
+Time_Value[3]             |    3.153(R)|   -0.786(R)|clk_BUFGP         |   0.000|
+Walk_Request[0]           |    5.498(R)|    0.626(R)|clk_BUFGP         |   0.000|
+Walk_Request[1]           |    5.627(R)|    0.410(R)|clk_BUFGP         |   0.000|
 --------------------------+------------+------------+------------------+--------+
 
 Clock clk to Pad
@@ -63,13 +64,13 @@ Clock clk to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-luces<0>    |   11.959(R)|clk_BUFGP         |   0.000|
-luces<1>    |   12.466(R)|clk_BUFGP         |   0.000|
-luces<2>    |   10.772(R)|clk_BUFGP         |   0.000|
-luces<3>    |   12.982(R)|clk_BUFGP         |   0.000|
-luces<4>    |   13.110(R)|clk_BUFGP         |   0.000|
-luces<5>    |   12.165(R)|clk_BUFGP         |   0.000|
-luces<6>    |   13.906(R)|clk_BUFGP         |   0.000|
+luces[0]    |   13.126(R)|clk_BUFGP         |   0.000|
+luces[1]    |   14.986(R)|clk_BUFGP         |   0.000|
+luces[2]    |   13.739(R)|clk_BUFGP         |   0.000|
+luces[3]    |   14.052(R)|clk_BUFGP         |   0.000|
+luces[4]    |   14.867(R)|clk_BUFGP         |   0.000|
+luces[5]    |   12.359(R)|clk_BUFGP         |   0.000|
+luces[6]    |   15.662(R)|clk_BUFGP         |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -77,18 +78,18 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    7.665|    3.575|         |         |
+clk            |    8.316|    4.818|    2.962|         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Wed Sep 04 20:42:40 2013 
+Analysis completed Sat Sep 07 00:58:16 2013 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 102 MB
+Peak Memory Usage: 146 MB
 
 
 

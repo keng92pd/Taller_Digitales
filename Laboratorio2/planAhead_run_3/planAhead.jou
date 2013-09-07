@@ -1,10 +1,17 @@
 #-----------------------------------------------------------
-# PlanAhead v14.6
-# Build 269223 by xbuild on Wed Jun  5 11:17:50 MDT 2013
-# Start of session at: Wed Sep 04 14:13:20 2013
-# Process ID: 3512
-# Log file: C:/Users/Zeck/Desktop/Laboratorio2/planAhead_run_3/planAhead.log
-# Journal file: C:/Users/Zeck/Desktop/Laboratorio2/planAhead_run_3/planAhead.jou
+# PlanAhead v14.6 (64-bit)
+# Build 269223 by xbuild on Wed Jun  5 11:14:03 MDT 2013
+# Start of session at: Fri Sep 06 23:11:00 2013
+# Process ID: 4060
+# Log file: C:/Users/Kenneth/Laboratorio2/planAhead_run_3/planAhead.log
+# Journal file: C:/Users/Kenneth/Laboratorio2/planAhead_run_3/planAhead.jou
 #-----------------------------------------------------------
 start_gui
-source C:/Users/Zeck/Desktop/Laboratorio2/pa.fromNetlist.tcl
+source C:/Users/Kenneth/Laboratorio2/pa.fromNetlist.tcl
+startgroup
+set_property package_pin L13 [get_ports {Walk_Request[1]}]
+endgroup
+startgroup
+set_property package_pin L14 [get_ports {Walk_Request[0]}]
+endgroup
+save_constraints

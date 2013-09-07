@@ -1,13 +1,12 @@
 
-# PlanAhead Generated physical constraints 
 
 NET "luces[6]" LOC = P11;
-NET "luces[5]" LOC = P12;
 NET "luces[4]" LOC = N12;
-NET "luces[3]" LOC = P13;
 NET "luces[2]" LOC = N14;
 NET "luces[1]" LOC = L12;
 NET "luces[0]" LOC = P14;
+NET "luces[3]" LOC = P13;
+NET "luces[5]" LOC = P12;
 NET "Time_Parameter_Selector[1]" LOC = K13;
 NET "Time_Parameter_Selector[0]" LOC = K14;
 NET "Time_Value[3]" LOC = J13;
@@ -15,7 +14,33 @@ NET "Time_Value[2]" LOC = J14;
 NET "Time_Value[1]" LOC = H13;
 NET "Time_Value[0]" LOC = H14;
 NET "clk" LOC = T9;
-NET "Reprogram" LOC = L14;
-NET "Reset" LOC = L13;
-NET "Sensor" LOC = F12;
-NET "Walk_Request" LOC = M14;
+NET "Reprogram" LOC = M13;
+NET "Reset" LOC = M14;
+
+
+NET "Sensor" LOC = G12;
+
+
+
+
+NET "SalidasDisplayS[6]" LOC = N16;
+NET "SalidasDisplayS[5]" LOC = F13;
+NET "SalidasDisplayS[4]" LOC = R16;
+NET "SalidasDisplayS[3]" LOC = P15;
+NET "SalidasDisplayS[2]" LOC = N15;
+NET "SalidasDisplayS[1]" LOC = G13;
+NET "SalidasDisplayS[0]" LOC = E14;
+
+
+NET "DisplayS[3]" LOC = E13;
+NET "DisplayS[2]" LOC = F14;
+NET "DisplayS[1]" LOC = G14;
+NET "DisplayS[0]" LOC = D14;
+
+
+NET "punto" LOC = P16;
+
+# PlanAhead Generated physical constraints 
+
+NET "Walk_Request[1]" LOC = L13;
+NET "Walk_Request[0]" LOC = L14;

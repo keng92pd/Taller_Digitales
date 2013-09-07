@@ -1,2 +1,0 @@
-vhdtdtfi -lib work C:/Users/Kenneth/Laboratorio2/WalkRegister.v -lang verilog -prj Laboratorio2 -o WalkRegister.spl -module WalkRegister -template C:/Xilinx/14.6/ISE_DS/ISE//data/splveri.tft -deleteonerror 
-spl2sym -intstyle ise -family spartan3 WalkRegister.spl C:/Users/Kenneth/Laboratorio2/WalkRegister.sym 

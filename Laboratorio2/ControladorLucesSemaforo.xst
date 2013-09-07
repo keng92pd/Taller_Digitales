@@ -18,7 +18,7 @@ run
 -write_timing_constraints NO
 -cross_clock_analysis NO
 -hierarchy_separator /
--bus_delimiter <>
+-bus_delimiter []
 -case Maintain
 -slice_utilization_ratio 100
 -bram_utilization_ratio 100

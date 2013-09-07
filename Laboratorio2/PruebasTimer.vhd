@@ -92,9 +92,14 @@ BEGIN
 		valor <= "0011";
 		wait for 20 ms;	
 		iniciar_timer <= '1';
-		wait for 3002 ms;
+		wait for 3200 ms;
+		iniciar_timer <= '0'; 
+		valor <= "0100";
+		wait for 20 ms;
+		iniciar_timer <= '1';
+		wait for 4020 ms;
 		iniciar_timer <= '0';
-		valor <= "0011";
+		valor <= "0010";
 		wait for 20 ms;
 		iniciar_timer <= '1';
       wait;

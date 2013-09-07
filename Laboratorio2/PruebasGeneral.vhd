@@ -66,7 +66,7 @@ ARCHITECTURE behavior OF PruebasGeneral IS
    signal luces : std_logic_vector(6 downto 0);
 
    -- Clock period definitions
-   constant clk_period : time := 200 ns;
+   constant clk_period : time := 20 ns;
  
 BEGIN
  
