@@ -1,0 +1,3 @@
+verilog work "DivisorFrecuencia5Hz.v"
+vhdl work "PruebaDivisorFrecuencia.vhd"
+verilog work "C:/Xilinx/14.6/ISE_DS/ISE//verilog/src/glbl.v"

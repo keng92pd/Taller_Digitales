@@ -1,0 +1,787 @@
+Release 14.6 - xst P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.36 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.37 secs
+ 
+--> Reading design: Laboratorio3.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Laboratorio3.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Laboratorio3"
+Output Format                      : NGC
+Target Device                      : xc3s200-4-ft256
+
+---- Source Options
+Top Module Name                    : Laboratorio3
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Sincronizador.v" in library work
+Compiling verilog file "ModuloInOut.v" in library work
+Module <Sincronizador> compiled
+Compiling verilog file "MaquinaEstados.v" in library work
+Module <ModuloInOut> compiled
+Compiling verilog file "ManejoDirecciones.v" in library work
+Module <MaquinaEstados> compiled
+Compiling verilog file "DatoActual.v" in library work
+Module <ManejoDirecciones> compiled
+Compiling verilog file "Contador4Bits.v" in library work
+Module <DatoActual> compiled
+Compiling verilog file "Comparador.v" in library work
+Module <Contador4Bits> compiled
+Compiling verilog file "DivisorFrecuenciaDisplay.v" in library work
+Module <Comparador> compiled
+Compiling verilog file "DivisorFrecuencia5Hz.v" in library work
+Module <DivisorFrecuenciaDisplay> compiled
+Compiling verilog file "Display.v" in library work
+Module <DivisorFrecuencia5Hz> compiled
+Compiling verilog file "ComprobadorDeMemoria.v" in library work
+Module <Display> compiled
+Compiling verilog file "Laboratorio3.v" in library work
+Module <ComprobadorDeMemoria> compiled
+Module <Laboratorio3> compiled
+No errors in compilation
+Analysis of file <"Laboratorio3.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <Laboratorio3> in library <work>.
+
+Analyzing hierarchy for module <DivisorFrecuencia5Hz> in library <work>.
+
+Analyzing hierarchy for module <DivisorFrecuenciaDisplay> in library <work>.
+
+Analyzing hierarchy for module <ComprobadorDeMemoria> in library <work>.
+
+Analyzing hierarchy for module <Display> in library <work>.
+
+Analyzing hierarchy for module <Sincronizador> in library <work>.
+
+Analyzing hierarchy for module <Comparador> in library <work>.
+
+Analyzing hierarchy for module <Contador4Bits> in library <work>.
+
+Analyzing hierarchy for module <DatoActual> in library <work>.
+
+Analyzing hierarchy for module <ManejoDirecciones> in library <work>.
+
+Analyzing hierarchy for module <MaquinaEstados> in library <work> with parameters.
+	s0 = "0000"
+	s1 = "0001"
+	s10 = "1010"
+	s11 = "1011"
+	s2 = "0010"
+	s3 = "0011"
+	s4 = "0100"
+	s5 = "0101"
+	s6 = "0110"
+	s7 = "0111"
+	s8 = "1000"
+	s9 = "1001"
+
+Analyzing hierarchy for module <ModuloInOut> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <Laboratorio3>.
+Module <Laboratorio3> is correct for synthesis.
+ 
+Analyzing module <DivisorFrecuencia5Hz> in library <work>.
+Module <DivisorFrecuencia5Hz> is correct for synthesis.
+ 
+Analyzing module <DivisorFrecuenciaDisplay> in library <work>.
+Module <DivisorFrecuenciaDisplay> is correct for synthesis.
+ 
+Analyzing module <ComprobadorDeMemoria> in library <work>.
+Module <ComprobadorDeMemoria> is correct for synthesis.
+ 
+Analyzing module <Sincronizador> in library <work>.
+Module <Sincronizador> is correct for synthesis.
+ 
+Analyzing module <Comparador> in library <work>.
+Module <Comparador> is correct for synthesis.
+ 
+Analyzing module <Contador4Bits> in library <work>.
+Module <Contador4Bits> is correct for synthesis.
+ 
+Analyzing module <DatoActual> in library <work>.
+Module <DatoActual> is correct for synthesis.
+ 
+Analyzing module <ManejoDirecciones> in library <work>.
+Module <ManejoDirecciones> is correct for synthesis.
+ 
+Analyzing module <MaquinaEstados> in library <work>.
+	s0 = 4'b0000
+	s1 = 4'b0001
+	s10 = 4'b1010
+	s11 = 4'b1011
+	s2 = 4'b0010
+	s3 = 4'b0011
+	s4 = 4'b0100
+	s5 = 4'b0101
+	s6 = 4'b0110
+	s7 = 4'b0111
+	s8 = 4'b1000
+	s9 = 4'b1001
+Module <MaquinaEstados> is correct for synthesis.
+ 
+Analyzing module <ModuloInOut> in library <work>.
+Module <ModuloInOut> is correct for synthesis.
+ 
+Analyzing module <Display> in library <work>.
+Module <Display> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <punto> in unit <Display> has a constant value of 0 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <DivisorFrecuencia5Hz>.
+    Related source file is "DivisorFrecuencia5Hz.v".
+    Found 25-bit up counter for signal <contador>.
+    Found 1-bit register for signal <segundero>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <DivisorFrecuencia5Hz> synthesized.
+
+
+Synthesizing Unit <DivisorFrecuenciaDisplay>.
+    Related source file is "DivisorFrecuenciaDisplay.v".
+    Found 17-bit up counter for signal <contador>.
+    Found 1-bit register for signal <segundero>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <DivisorFrecuenciaDisplay> synthesized.
+
+
+Synthesizing Unit <Display>.
+    Related source file is "Display.v".
+    Found 4-bit register for signal <Display>.
+    Found 7-bit register for signal <S>.
+    Found 1-bit register for signal <ultimaLectura>.
+    Summary:
+	inferred  12 D-type flip-flop(s).
+Unit <Display> synthesized.
+
+
+Synthesizing Unit <Sincronizador>.
+    Related source file is "Sincronizador.v".
+    Found 2-bit register for signal <interruptor_salida>.
+    Found 1-bit register for signal <reset_salida>.
+    Found 1-bit register for signal <reset_temporal>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <Sincronizador> synthesized.
+
+
+Synthesizing Unit <Comparador>.
+    Related source file is "Comparador.v".
+    Found 1-bit register for signal <resultado_comparacion>.
+    Found 4-bit comparator equal for signal <resultado_comparacion$cmp_eq0000> created at line 28.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <Comparador> synthesized.
+
+
+Synthesizing Unit <Contador4Bits>.
+    Related source file is "Contador4Bits.v".
+    Found 4-bit up counter for signal <direccion>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <Contador4Bits> synthesized.
+
+
+Synthesizing Unit <DatoActual>.
+    Related source file is "DatoActual.v".
+WARNING:Xst:737 - Found 4-bit latch for signal <dato>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+Unit <DatoActual> synthesized.
+
+
+Synthesizing Unit <ManejoDirecciones>.
+    Related source file is "ManejoDirecciones.v".
+    Found 4-bit 4-to-1 multiplexer for signal <datos>.
+    Summary:
+	inferred   4 Multiplexer(s).
+Unit <ManejoDirecciones> synthesized.
+
+
+Synthesizing Unit <MaquinaEstados>.
+    Related source file is "MaquinaEstados.v".
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 12                                             |
+    | Transitions        | 13                                             |
+    | Inputs             | 1                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset_sinc                (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 0000                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <MaquinaEstados> synthesized.
+
+
+Synthesizing Unit <ModuloInOut>.
+    Related source file is "ModuloInOut.v".
+    Found 4-bit tristate buffer for signal <InOut>.
+    Summary:
+	inferred   4 Tristate(s).
+Unit <ModuloInOut> synthesized.
+
+
+Synthesizing Unit <ComprobadorDeMemoria>.
+    Related source file is "ComprobadorDeMemoria.v".
+Unit <ComprobadorDeMemoria> synthesized.
+
+
+Synthesizing Unit <Laboratorio3>.
+    Related source file is "Laboratorio3.v".
+Unit <Laboratorio3> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 3
+ 17-bit up counter                                     : 1
+ 25-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 9
+ 1-bit register                                        : 6
+ 2-bit register                                        : 1
+ 4-bit register                                        : 1
+ 7-bit register                                        : 1
+# Latches                                              : 1
+ 4-bit latch                                           : 1
+# Comparators                                          : 1
+ 4-bit comparator equal                                : 1
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Tristates                                            : 1
+ 4-bit tristate buffer                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <Comprobador/MaquinaEstadosFinitos/state/FSM> on signal <state[1:12]> with one-hot encoding.
+-----------------------
+ State | Encoding
+-----------------------
+ 0000  | 000000000001
+ 0001  | 000000000010
+ 0010  | 000000000100
+ 0011  | 000000001000
+ 0100  | 000000010000
+ 0101  | 000000100000
+ 0110  | 000001000000
+ 0111  | 000010000000
+ 1000  | 000100000000
+ 1001  | 010000000000
+ 1010  | 001000000000
+ 1011  | 100000000000
+-----------------------
+INFO:Xst:2261 - The FF/Latch <Display_0> in Unit <LEDS> is equivalent to the following FF/Latch, which will be removed : <Display_3> 
+WARNING:Xst:1710 - FF/Latch <Display_0> (without init value) has a constant value of 1 in block <LEDS>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Counters                                             : 3
+ 17-bit up counter                                     : 1
+ 25-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 19
+ Flip-Flops                                            : 19
+# Latches                                              : 1
+ 4-bit latch                                           : 1
+# Comparators                                          : 1
+ 4-bit comparator equal                                : 1
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <Display_0> (without init value) has a constant value of 1 in block <Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Display_3> (without init value) has a constant value of 1 in block <Display>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <Laboratorio3> ...
+
+Optimizing unit <Display> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <LEDS/ultimaLectura> in Unit <Laboratorio3> is equivalent to the following FF/Latch, which will be removed : <LEDS/Display_1> 
+Found area constraint ratio of 100 (+ 5) on block Laboratorio3, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 74
+ Flip-Flops                                            : 74
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Laboratorio3.ngr
+Top Level Output File Name         : Laboratorio3
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 59
+
+Cell Usage :
+# BELS                             : 195
+#      GND                         : 1
+#      INV                         : 8
+#      LUT1                        : 40
+#      LUT2                        : 7
+#      LUT3                        : 6
+#      LUT4                        : 31
+#      MUXCY                       : 52
+#      MUXF5                       : 7
+#      VCC                         : 1
+#      XORCY                       : 42
+# FlipFlops/Latches                : 78
+#      FD                          : 8
+#      FDC                         : 4
+#      FDE                         : 2
+#      FDE_1                       : 3
+#      FDP_1                       : 1
+#      FDR                         : 55
+#      FDS                         : 1
+#      LD                          : 4
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 58
+#      IBUF                        : 3
+#      IOBUF                       : 4
+#      OBUF                        : 51
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-4 
+
+ Number of Slices:                       55  out of   1920     2%  
+ Number of Slice Flip Flops:             76  out of   3840     1%  
+ Number of 4 input LUTs:                 92  out of   3840     2%  
+ Number of IOs:                          59
+ Number of bonded IOBs:                  59  out of    173    34%  
+    IOB Flip Flops:                       2
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+------------------------------------------------------------------------------------+------------------------------------------------------+-------+
+Clock Signal                                                                        | Clock buffer(FF name)                                | Load  |
+------------------------------------------------------------------------------------+------------------------------------------------------+-------+
+clk                                                                                 | BUFGP                                                | 44    |
+Comprobador/write_dato_control(Comprobador/MaquinaEstadosFinitos/state_FSM_Out4:O)  | NONE(*)(Comprobador/DatoActualFSM/dato_0)            | 4     |
+Comprobador/MaquinaEstadosFinitos/state_FSM_FFd6                                    | NONE(Comprobador/ComparadorFSM/resultado_comparacion)| 1     |
+DivisorFrecuenciaFSM/segundero                                                      | NONE(Comprobador/SincronizadorFSML/reset_temporal)   | 16    |
+Comprobador/solicitar_direccion(Comprobador/MaquinaEstadosFinitos/state_FSM_Out51:O)| NONE(*)(Comprobador/Contador/direccion_0)            | 4     |
+DivisorFrecuenciaDis/segundero                                                      | NONE(LEDS/Display_2)                                 | 9     |
+------------------------------------------------------------------------------------+------------------------------------------------------+-------+
+(*) These 2 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+----------------------------------------------------------------------------------------+---------------------------------------+-------+
+Control Signal                                                                          | Buffer(FF name)                       | Load  |
+----------------------------------------------------------------------------------------+---------------------------------------+-------+
+Comprobador/SincronizadorFSML/reset_salida(Comprobador/SincronizadorFSML/reset_salida:Q)| NONE(Comprobador/Contador/direccion_0)| 4     |
+reset                                                                                   | IBUF                                  | 1     |
+----------------------------------------------------------------------------------------+---------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 6.369ns (Maximum Frequency: 157.017MHz)
+   Minimum input arrival time before clock: 6.168ns
+   Maximum output required time after clock: 10.861ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.369ns (frequency: 157.017MHz)
+  Total number of paths / destination ports: 1436 / 88
+-------------------------------------------------------------------------
+Delay:               6.369ns (Levels of Logic = 7)
+  Source:            DivisorFrecuenciaFSM/contador_9 (FF)
+  Destination:       DivisorFrecuenciaFSM/contador_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: DivisorFrecuenciaFSM/contador_9 to DivisorFrecuenciaFSM/contador_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.720   1.216  DivisorFrecuenciaFSM/contador_9 (DivisorFrecuenciaFSM/contador_9)
+     LUT4:I0->O            1   0.551   0.000  DivisorFrecuenciaFSM/segundero_cmp_eq0000_wg_lut<1> (DivisorFrecuenciaFSM/segundero_cmp_eq0000_wg_lut<1>)
+     MUXCY:S->O            1   0.500   0.000  DivisorFrecuenciaFSM/segundero_cmp_eq0000_wg_cy<1> (DivisorFrecuenciaFSM/segundero_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  DivisorFrecuenciaFSM/segundero_cmp_eq0000_wg_cy<2> (DivisorFrecuenciaFSM/segundero_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  DivisorFrecuenciaFSM/segundero_cmp_eq0000_wg_cy<3> (DivisorFrecuenciaFSM/segundero_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  DivisorFrecuenciaFSM/segundero_cmp_eq0000_wg_cy<4> (DivisorFrecuenciaFSM/segundero_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  DivisorFrecuenciaFSM/segundero_cmp_eq0000_wg_cy<5> (DivisorFrecuenciaFSM/segundero_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O          26   0.281   1.819  DivisorFrecuenciaFSM/segundero_cmp_eq0000_wg_cy<6> (DivisorFrecuenciaFSM/segundero_cmp_eq0000)
+     FDR:R                     1.026          DivisorFrecuenciaFSM/contador_0
+    ----------------------------------------
+    Total                      6.369ns (3.334ns logic, 3.035ns route)
+                                       (52.3% logic, 47.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DivisorFrecuenciaFSM/segundero'
+  Clock period: 5.966ns (frequency: 167.616MHz)
+  Total number of paths / destination ports: 26 / 25
+-------------------------------------------------------------------------
+Delay:               2.983ns (Levels of Logic = 0)
+  Source:            Comprobador/SincronizadorFSML/reset_salida (FF)
+  Destination:       Comprobador/MaquinaEstadosFinitos/state_FSM_FFd3 (FF)
+  Source Clock:      DivisorFrecuenciaFSM/segundero falling
+  Destination Clock: DivisorFrecuenciaFSM/segundero rising
+
+  Data Path: Comprobador/SincronizadorFSML/reset_salida to Comprobador/MaquinaEstadosFinitos/state_FSM_FFd3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE_1:C->Q           16   0.720   1.237  Comprobador/SincronizadorFSML/reset_salida (Comprobador/SincronizadorFSML/reset_salida)
+     FDR:R                     1.026          Comprobador/MaquinaEstadosFinitos/state_FSM_FFd3
+    ----------------------------------------
+    Total                      2.983ns (1.746ns logic, 1.237ns route)
+                                       (58.5% logic, 41.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Comprobador/solicitar_direccion'
+  Clock period: 3.445ns (frequency: 290.276MHz)
+  Total number of paths / destination ports: 10 / 4
+-------------------------------------------------------------------------
+Delay:               3.445ns (Levels of Logic = 1)
+  Source:            Comprobador/Contador/direccion_0 (FF)
+  Destination:       Comprobador/Contador/direccion_0 (FF)
+  Source Clock:      Comprobador/solicitar_direccion rising
+  Destination Clock: Comprobador/solicitar_direccion rising
+
+  Data Path: Comprobador/Contador/direccion_0 to Comprobador/Contador/direccion_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             13   0.720   1.170  Comprobador/Contador/direccion_0 (Comprobador/Contador/direccion_0)
+     INV:I->O              1   0.551   0.801  Comprobador/Contador/Mcount_direccion_xor<0>11_INV_0 (Result<0>2)
+     FDC:D                     0.203          Comprobador/Contador/direccion_0
+    ----------------------------------------
+    Total                      3.445ns (1.474ns logic, 1.971ns route)
+                                       (42.8% logic, 57.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DivisorFrecuenciaDis/segundero'
+  Clock period: 2.880ns (frequency: 347.222MHz)
+  Total number of paths / destination ports: 9 / 9
+-------------------------------------------------------------------------
+Delay:               2.880ns (Levels of Logic = 0)
+  Source:            LEDS/ultimaLectura (FF)
+  Destination:       LEDS/ultimaLectura (FF)
+  Source Clock:      DivisorFrecuenciaDis/segundero rising
+  Destination Clock: DivisorFrecuenciaDis/segundero rising
+
+  Data Path: LEDS/ultimaLectura to LEDS/ultimaLectura
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             10   0.720   1.134  LEDS/ultimaLectura (LEDS/ultimaLectura)
+     FDR:R                     1.026          LEDS/ultimaLectura
+    ----------------------------------------
+    Total                      2.880ns (1.746ns logic, 1.134ns route)
+                                       (60.6% logic, 39.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Comprobador/MaquinaEstadosFinitos/state_FSM_FFd6'
+  Total number of paths / destination ports: 4 / 1
+-------------------------------------------------------------------------
+Offset:              6.168ns (Levels of Logic = 3)
+  Source:            datoSalida<1> (PAD)
+  Destination:       Comprobador/ComparadorFSM/resultado_comparacion (FF)
+  Destination Clock: Comprobador/MaquinaEstadosFinitos/state_FSM_FFd6 rising
+
+  Data Path: datoSalida<1> to Comprobador/ComparadorFSM/resultado_comparacion
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IOBUF:IO->O           8   0.821   1.278  datoSalida_1_IOBUF (N8)
+     LUT4:I1->O            1   0.551   1.140  Comprobador/ComparadorFSM/resultado_comparacion_cmp_eq0000_inv26 (Comprobador/ComparadorFSM/resultado_comparacion_cmp_eq0000_inv26)
+     LUT2:I0->O            1   0.551   0.801  Comprobador/ComparadorFSM/resultado_comparacion_cmp_eq0000_inv54 (Comprobador/ComparadorFSM/resultado_comparacion_cmp_eq0000_inv)
+     FDR:R                     1.026          Comprobador/ComparadorFSM/resultado_comparacion
+    ----------------------------------------
+    Total                      6.168ns (2.949ns logic, 3.219ns route)
+                                       (47.8% logic, 52.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'DivisorFrecuenciaFSM/segundero'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              3.758ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       Comprobador/SincronizadorFSML/interruptor_salida_0 (FF)
+  Destination Clock: DivisorFrecuenciaFSM/segundero falling
+
+  Data Path: reset to Comprobador/SincronizadorFSML/interruptor_salida_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.821   0.877  reset_IBUF (reset_IBUF)
+     INV:I->O              3   0.551   0.907  Comprobador/SincronizadorFSML/reset_inv1_INV_0 (Comprobador/SincronizadorFSML/reset_inv)
+     FDE_1:CE                  0.602          Comprobador/SincronizadorFSML/interruptor_salida_0
+    ----------------------------------------
+    Total                      3.758ns (1.974ns logic, 1.784ns route)
+                                       (52.5% logic, 47.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'DivisorFrecuenciaDis/segundero'
+  Total number of paths / destination ports: 28 / 7
+-------------------------------------------------------------------------
+Offset:              3.357ns (Levels of Logic = 3)
+  Source:            datoSalida<2> (PAD)
+  Destination:       LEDS/S_6 (FF)
+  Destination Clock: DivisorFrecuenciaDis/segundero rising
+
+  Data Path: datoSalida<2> to LEDS/S_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IOBUF:IO->O           8   0.821   1.422  datoSalida_2_IOBUF (N7)
+     LUT4:I0->O            1   0.551   0.000  LEDS/S_mux0000<5>121_G (N31)
+     MUXF5:I1->O           1   0.360   0.000  LEDS/S_mux0000<5>121 (LEDS/S_mux0000<5>)
+     FD:D                      0.203          LEDS/S_1
+    ----------------------------------------
+    Total                      3.357ns (1.935ns logic, 1.422ns route)
+                                       (57.6% logic, 42.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'DivisorFrecuenciaFSM/segundero'
+  Total number of paths / destination ports: 49 / 9
+-------------------------------------------------------------------------
+Offset:              10.861ns (Levels of Logic = 3)
+  Source:            Comprobador/MaquinaEstadosFinitos/state_FSM_FFd12 (FF)
+  Destination:       datoSalida<3> (PAD)
+  Source Clock:      DivisorFrecuenciaFSM/segundero rising
+
+  Data Path: Comprobador/MaquinaEstadosFinitos/state_FSM_FFd12 to datoSalida<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q              3   0.720   1.246  Comprobador/MaquinaEstadosFinitos/state_FSM_FFd12 (Comprobador/MaquinaEstadosFinitos/state_FSM_FFd12)
+     LUT2:I0->O            2   0.551   0.903  Comprobador/MaquinaEstadosFinitos/state_FSM_Out3_SW0 (N4)
+     LUT4:I3->O            6   0.551   1.003  Comprobador/MaquinaEstadosFinitos/state_FSM_Out3 (WE_OBUF)
+     IOBUF:T->IO               5.887          datoSalida_3_IOBUF (datoSalida<3>)
+    ----------------------------------------
+    Total                     10.861ns (7.709ns logic, 3.152ns route)
+                                       (71.0% logic, 29.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Comprobador/solicitar_direccion'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              9.157ns (Levels of Logic = 2)
+  Source:            Comprobador/Contador/direccion_0 (FF)
+  Destination:       datoSalida<0> (PAD)
+  Source Clock:      Comprobador/solicitar_direccion rising
+
+  Data Path: Comprobador/Contador/direccion_0 to datoSalida<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             13   0.720   1.365  Comprobador/Contador/direccion_0 (Comprobador/Contador/direccion_0)
+     LUT3:I1->O            2   0.551   0.877  Comprobador/ManejoDireccionesFSM/Mmux_datos11 (Comprobador/datos_por_guardar<0>)
+     IOBUF:I->IO               5.644          datoSalida_0_IOBUF (datoSalida<0>)
+    ----------------------------------------
+    Total                      9.157ns (6.915ns logic, 2.242ns route)
+                                       (75.5% logic, 24.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'DivisorFrecuenciaDis/segundero'
+  Total number of paths / destination ports: 9 / 9
+-------------------------------------------------------------------------
+Offset:              7.498ns (Levels of Logic = 1)
+  Source:            LEDS/ultimaLectura (FF)
+  Destination:       DisplayS<1> (PAD)
+  Source Clock:      DivisorFrecuenciaDis/segundero rising
+
+  Data Path: LEDS/ultimaLectura to DisplayS<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             10   0.720   1.134  LEDS/ultimaLectura (LEDS/ultimaLectura)
+     OBUF:I->O                 5.644          DisplayS_1_OBUF (DisplayS<1>)
+    ----------------------------------------
+    Total                      7.498ns (6.364ns logic, 1.134ns route)
+                                       (84.9% logic, 15.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 19.00 secs
+Total CPU time to Xst completion: 18.65 secs
+ 
+--> 
+
+Total memory usage is 261508 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

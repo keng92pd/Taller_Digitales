@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# PlanAhead v14.6 (64-bit)
+# Build 269223 by xbuild on Wed Jun  5 11:14:03 MDT 2013
+# Start of session at: Mon Sep 23 03:44:28 2013
+# Process ID: 1692
+# Log file: C:/Users/Kenneth/Laboratorio3/planAhead_run_2/planAhead.log
+# Journal file: C:/Users/Kenneth/Laboratorio3/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/Kenneth/Laboratorio3/pa.fromNetlist.tcl
+set_property is_loc_fixed false [get_ports [list  {datoSalida[2]}]]
+set_property is_loc_fixed true [get_ports [list  {datoSalida[2]}]]
+set_property is_loc_fixed false [get_ports [list  {datoSalida[2]}]]
+save_constraints
+set_property is_loc_fixed true [get_ports [list  {datoSalida[2]}]]
+set_property is_loc_fixed false [get_ports [list  {datoSalida[2]}]]
+set_property is_loc_fixed true [get_ports [list  {datoSalida[2]}]]
+set_property package_pin "" [get_ports [list  {datoSalida[2]}]]
+set_property iostandard LVCMOS25 [get_ports [list {datoSalida[1]}]]
+set_property is_loc_fixed false [get_ports [list  {datoSalida[3]}]]
+set_property is_loc_fixed true [get_ports [list  {datoSalida[3]}]]
+set_property is_loc_fixed false [get_ports [list  {datoSalida[3]}]]
+set_property is_loc_fixed true [get_ports [list  {datoSalida[3]}]]
+set_property is_loc_fixed false [get_ports [list  {datoSalida[3]}]]
+set_property is_loc_fixed true [get_ports [list  {datoSalida[3]}]]
+save_constraints
+startgroup
+set_property package_pin R6 [get_ports {datoSalida[2]}]
+endgroup
+save_constraints

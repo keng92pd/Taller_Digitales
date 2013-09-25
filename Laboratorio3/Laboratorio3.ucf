@@ -1,0 +1,92 @@
+
+
+NET "puntoS" LOC = P16;
+NET "reset" LOC = L14;
+NET "SieteSegmentosS[6]" LOC = N16;
+NET "SieteSegmentosS[5]" LOC = F13;
+NET "SieteSegmentosS[4]" LOC = R16;
+NET "SieteSegmentosS[1]" LOC = G13;
+NET "SieteSegmentosS[0]" LOC = E14;
+NET "SieteSegmentosS[2]" LOC = N15;
+NET "SieteSegmentosS[3]" LOC = P15;
+NET "LEDSlecturaEscrituraSalida[1]" LOC = P14;
+NET "LEDSlecturaEscrituraSalida[0]" LOC = K12;
+NET "LEDsExitoFalloS[1]" LOC = P11;
+NET "LEDsExitoFalloS[0]" LOC = P12;
+NET "interruptor[1]" LOC = J14;
+NET "interruptor[0]" LOC = H13;
+NET "DisplayS[3]" LOC = D14;
+NET "DisplayS[2]" LOC = G14;
+NET "DisplayS[1]" LOC = F14;
+NET "DisplayS[0]" LOC = E13;
+
+
+NET "ceros[2]" LOC = P6;
+NET "ceros[0]" LOC = P7;
+NET "ceros[1]" LOC = T4;
+NET "ceros[3]" LOC = K4;
+NET "direccionS[0]" LOC = L5;
+NET "direccionS[1]" LOC = N3;
+NET "direccionS[2]" LOC = M4;
+NET "direccionS[3]" LOC = M3;
+NET "direccionS[4]" LOC = L4;
+NET "direccionS[5]" LOC = G4;
+NET "direccionS[6]" LOC = F3;
+NET "direccionS[7]" LOC = F4;
+NET "direccionS[8]" LOC = E3;
+NET "direccionS[9]" LOC = E4;
+NET "direccionS[10]" LOC = G5;
+NET "direccionS[11]" LOC = H3;
+NET "direccionS[12]" LOC = H4;
+NET "direccionS[13]" LOC = J4;
+NET "direccionS[14]" LOC = J3;
+NET "direccionS[15]" LOC = K3;
+NET "direccionS[16]" LOC = K5;
+NET "direccionS[17]" LOC = L3;
+NET "WE" LOC = G3;
+
+
+NET "datoSalida[15]" PULLUP;
+NET "datoSalida[14]" PULLUP;
+NET "datoSalida[13]" PULLUP;
+NET "datoSalida[12]" PULLUP;
+NET "datoSalida[11]" PULLUP;
+NET "datoSalida[10]" PULLUP;
+NET "datoSalida[9]" PULLUP;
+NET "datoSalida[8]" PULLUP;
+NET "datoSalida[7]" PULLUP;
+NET "datoSalida[6]" PULLUP;
+NET "datoSalida[5]" PULLUP;
+NET "datoSalida[4]" PULLUP;
+NET "datoSalida[3]" PULLUP;
+NET "datoSalida[2]" PULLUP;
+NET "datoSalida[1]" PULLUP;
+NET "datoSalida[0]" PULLUP;
+
+
+NET "datoSalida[0]" LOC = N7;
+NET "datoSalida[1]" LOC = T8;
+NET "datoSalida[4]" LOC = R5;
+NET "datoSalida[5]" LOC = C2;
+NET "datoSalida[6]" LOC = C1;
+NET "datoSalida[7]" LOC = B1;
+NET "datoSalida[8]" LOC = D3;
+NET "datoSalida[9]" LOC = P8;
+NET "datoSalida[10]" LOC = F2;
+NET "datoSalida[11]" LOC = H1;
+NET "datoSalida[12]" LOC = J2;
+NET "datoSalida[13]" LOC = L2;
+NET "datoSalida[14]" LOC = P1;
+NET "datoSalida[15]" LOC = R1;
+
+
+NET "clk" LOC = T9;
+
+# PlanAhead Generated IO constraints 
+
+NET "datoSalida[1]" IOSTANDARD = LVCMOS25;
+
+# PlanAhead Generated physical constraints 
+
+NET "datoSalida[3]" LOC = T5;
+NET "datoSalida[2]" LOC = R6;

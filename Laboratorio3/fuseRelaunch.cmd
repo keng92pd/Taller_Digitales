@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/Kenneth/Laboratorio3/SimulacionGeneral_isim_beh.exe" -prj "C:/Users/Kenneth/Laboratorio3/SimulacionGeneral_beh.prj" "work.SimulacionGeneral" "work.glbl" 

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Kenneth\Laboratorio3\Laboratorio3.ncd
+OUTFILE=C:\Users\Kenneth\Laboratorio3\Laboratorio3.bit
+FAMILY=Spartan3
+PART=xc3s200-4ft256
+WORKINGDIR=C:\Users\Kenneth\Laboratorio3
+LICENSE=WebPack
+USER_INFO=210784013_0_0_570

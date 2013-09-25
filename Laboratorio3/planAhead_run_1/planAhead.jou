@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# PlanAhead v14.6 (64-bit)
+# Build 269223 by xbuild on Wed Jun  5 11:14:03 MDT 2013
+# Start of session at: Mon Sep 23 03:33:00 2013
+# Process ID: 6048
+# Log file: C:/Users/Kenneth/Laboratorio3/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/Kenneth/Laboratorio3/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/Kenneth/Laboratorio3/pa.fromNetlist.tcl
+startgroup
+set_property package_pin P11 [get_ports {LEDsExitoFalloS[1]}]
+endgroup
+startgroup
+set_property package_pin P12 [get_ports {LEDsExitoFalloS[0]}]
+endgroup
+save_constraints
