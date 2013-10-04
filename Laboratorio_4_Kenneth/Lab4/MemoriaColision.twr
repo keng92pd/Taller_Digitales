@@ -1,0 +1,180 @@
+--------------------------------------------------------------------------------
+Release 14.6 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\Xilinx\14.6\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 4 -n
+3 -fastpaths -xml MemoriaColision.twx MemoriaColision.ncd -o
+MemoriaColision.twr MemoriaColision.pcf
+
+Design file:              MemoriaColision.ncd
+Physical constraint file: MemoriaColision.pcf
+Device,package,speed:     xc3s200,ft256,-4 (PRODUCTION 1.39 2013-06-08)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock WE to Pad
+----------------+------------+------------------------+--------+
+                | clk (edge) |                        | Clock  |
+Destination     |   to PAD   |Internal Clock(s)       | Phase  |
+----------------+------------+------------------------+--------+
+tipoColSalida<0>|    9.732(F)|almacenamiendo_0_not0001|   0.000|
+tipoColSalida<1>|   10.047(F)|almacenamiendo_1_not0001|   0.000|
+----------------+------------+------------------------+--------+
+
+Clock reset to Pad
+----------------+------------+------------------------+--------+
+                | clk (edge) |                        | Clock  |
+Destination     |   to PAD   |Internal Clock(s)       | Phase  |
+----------------+------------+------------------------+--------+
+tipoColSalida<0>|    8.587(F)|almacenamiendo_0_not0001|   0.000|
+tipoColSalida<1>|    8.981(F)|almacenamiendo_1_not0001|   0.000|
+----------------+------------+------------------------+--------+
+
+Clock tipoColEntrada<0> to Pad
+----------------+------------+------------------------+--------+
+                | clk (edge) |                        | Clock  |
+Destination     |   to PAD   |Internal Clock(s)       | Phase  |
+----------------+------------+------------------------+--------+
+tipoColSalida<0>|    8.357(F)|almacenamiendo_0_not0001|   0.000|
+tipoColSalida<1>|    8.871(F)|almacenamiendo_1_not0001|   0.000|
+----------------+------------+------------------------+--------+
+
+Clock tipoColEntrada<1> to Pad
+----------------+------------+------------------------+--------+
+                | clk (edge) |                        | Clock  |
+Destination     |   to PAD   |Internal Clock(s)       | Phase  |
+----------------+------------+------------------------+--------+
+tipoColSalida<0>|    8.241(F)|almacenamiendo_0_not0001|   0.000|
+tipoColSalida<1>|    8.677(F)|almacenamiendo_1_not0001|   0.000|
+----------------+------------+------------------------+--------+
+
+Clock tipoColEntrada<2> to Pad
+----------------+------------+------------------------+--------+
+                | clk (edge) |                        | Clock  |
+Destination     |   to PAD   |Internal Clock(s)       | Phase  |
+----------------+------------+------------------------+--------+
+tipoColSalida<0>|    9.149(F)|almacenamiendo_0_not0001|   0.000|
+tipoColSalida<1>|    9.464(F)|almacenamiendo_1_not0001|   0.000|
+----------------+------------+------------------------+--------+
+
+Clock tipoColEntrada<3> to Pad
+----------------+------------+------------------------+--------+
+                | clk (edge) |                        | Clock  |
+Destination     |   to PAD   |Internal Clock(s)       | Phase  |
+----------------+------------+------------------------+--------+
+tipoColSalida<0>|    9.370(F)|almacenamiendo_0_not0001|   0.000|
+tipoColSalida<1>|    9.685(F)|almacenamiendo_1_not0001|   0.000|
+----------------+------------+------------------------+--------+
+
+Clock to Setup on destination clock WE
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+WE               |         |         |    0.197|    0.197|
+tipoColEntrada<0>|         |         |   -1.007|   -1.007|
+tipoColEntrada<1>|         |         |   -0.780|   -0.780|
+tipoColEntrada<2>|         |         |   -0.386|   -0.386|
+tipoColEntrada<3>|         |         |   -0.165|   -0.165|
+-----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock reset
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+WE               |         |         |    1.113|    1.113|
+tipoColEntrada<0>|         |         |   -0.135|   -0.135|
+tipoColEntrada<1>|         |         |    0.086|    0.086|
+tipoColEntrada<2>|         |         |    0.530|    0.530|
+tipoColEntrada<3>|         |         |    0.751|    0.751|
+-----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock tipoColEntrada<0>
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+WE               |         |         |    1.297|    1.297|
+tipoColEntrada<0>|         |         |    0.049|    0.049|
+tipoColEntrada<1>|         |         |    0.270|    0.270|
+tipoColEntrada<2>|         |         |    0.714|    0.714|
+tipoColEntrada<3>|         |         |    0.935|    0.935|
+-----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock tipoColEntrada<1>
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+WE               |         |         |    1.390|    1.390|
+tipoColEntrada<0>|         |         |    0.142|    0.142|
+tipoColEntrada<1>|         |         |    0.363|    0.363|
+tipoColEntrada<2>|         |         |    0.807|    0.807|
+tipoColEntrada<3>|         |         |    1.028|    1.028|
+-----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock tipoColEntrada<2>
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+WE               |         |         |    0.663|    0.663|
+tipoColEntrada<0>|         |         |   -0.541|   -0.541|
+tipoColEntrada<1>|         |         |   -0.314|   -0.314|
+tipoColEntrada<2>|         |         |    0.080|    0.080|
+tipoColEntrada<3>|         |         |    0.301|    0.301|
+-----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock tipoColEntrada<3>
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+WE               |         |         |    0.486|    0.486|
+tipoColEntrada<0>|         |         |   -0.718|   -0.718|
+tipoColEntrada<1>|         |         |   -0.491|   -0.491|
+tipoColEntrada<2>|         |         |   -0.097|   -0.097|
+tipoColEntrada<3>|         |         |    0.124|    0.124|
+-----------------+---------+---------+---------+---------+
+
+
+Analysis completed Fri Oct 04 02:23:11 2013 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 101 MB
+
+
+
