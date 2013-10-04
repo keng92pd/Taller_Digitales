@@ -1,0 +1,29 @@
+Command line:
+   PruebasModuloDirecciones_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  56838
+
+Wed Sep 25 04:51:42 2013
+
+
+ Elaboration Time: 0.109201 sec
+
+ Current Memory Usage: 812.417 Meg
+
+ Total Signals          : 19
+ Total Nets             : 33
+ Total Signal Drivers   : 11
+ Total Blocks           : 5
+ Total Primitive Blocks : 4
+ Total Processes        : 12
+ Total Traceable Variables  : 28
+ Total Scalar Nets and Variables : 478
+Total Line Count : 33
+
+ Total Simulation Time: 0.124801 sec
+
+ Current Memory Usage: 812.417 Meg
+
+Wed Sep 25 04:51:53 2013
+

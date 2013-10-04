@@ -1,0 +1,43 @@
+Running: D:\Xilinx\14.6\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/Zeck/Desktop/Repositorio_Kenneth/Laboratorio3/TEST_isim_beh.exe -prj C:/Users/Zeck/Desktop/Repositorio_Kenneth/Laboratorio3/TEST_beh.prj work.TEST work.glbl 
+ISim P.68d (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Zeck/Desktop/Repositorio_Kenneth/Laboratorio3/Sincronizador.v" into library work
+Analyzing Verilog file "C:/Users/Zeck/Desktop/Repositorio_Kenneth/Laboratorio3/ModuloInOut.v" into library work
+Analyzing Verilog file "C:/Users/Zeck/Desktop/Repositorio_Kenneth/Laboratorio3/MaquinaEstados.v" into library work
+Analyzing Verilog file "C:/Users/Zeck/Desktop/Repositorio_Kenneth/Laboratorio3/ManejoDirecciones.v" into library work
+Analyzing Verilog file "C:/Users/Zeck/Desktop/Repositorio_Kenneth/Laboratorio3/DatoActual.v" into library work
+Analyzing Verilog file "C:/Users/Zeck/Desktop/Repositorio_Kenneth/Laboratorio3/Contador4Bits.v" into library work
+Analyzing Verilog file "C:/Users/Zeck/Desktop/Repositorio_Kenneth/Laboratorio3/Comparador.v" into library work
+Analyzing Verilog file "C:/Users/Zeck/Desktop/Repositorio_Kenneth/Laboratorio3/MEMORIA.v" into library work
+Analyzing Verilog file "C:/Users/Zeck/Desktop/Repositorio_Kenneth/Laboratorio3/ComprobadorDeMemoria.v" into library work
+Analyzing Verilog file "C:/Users/Zeck/Desktop/Repositorio_Kenneth/Laboratorio3/Laboratorio3.v" into library work
+Analyzing Verilog file "D:/Xilinx/14.6/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Parsing VHDL file "C:/Users/Zeck/Desktop/Repositorio_Kenneth/Laboratorio3/TEST.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 105568 KB
+Fuse CPU Usage: 405 ms
+Compiling module glbl
+Compiling module Sincronizador
+Compiling module Comparador
+Compiling module Contador4Bits
+Compiling module DatoActual
+Compiling module ManejoDirecciones
+Compiling module MaquinaEstados
+Compiling module ModuloInOut
+Compiling module ComprobadorDeMemoria
+Compiling module MEMORIA
+Compiling module Laboratorio3
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package vl_types
+Compiling architecture behavior of entity test
+Time Resolution for simulation is 1ps.
+Waiting for 11 sub-compilation(s) to finish...
+Compiled 4 VHDL Units
+Compiled 11 Verilog Units
+Built simulation executable C:/Users/Zeck/Desktop/Repositorio_Kenneth/Laboratorio3/TEST_isim_beh.exe
+Fuse Memory Usage: 118860 KB
+Fuse CPU Usage: 576 ms

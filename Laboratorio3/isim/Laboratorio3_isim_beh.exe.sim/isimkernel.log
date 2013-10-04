@@ -1,0 +1,29 @@
+Command line:
+   Laboratorio3_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  56968
+
+Wed Sep 25 04:59:49 2013
+
+
+ Elaboration Time: 0.0936 sec
+
+ Current Memory Usage: 812.274 Meg
+
+ Total Signals          : 89
+ Total Nets             : 129
+ Total Signal Drivers   : 33
+ Total Blocks           : 11
+ Total Primitive Blocks : 9
+ Total Processes        : 48
+ Total Traceable Variables  : 53
+ Total Scalar Nets and Variables : 412
+Total Line Count : 131
+
+ Total Simulation Time: 0.265202 sec
+
+ Current Memory Usage: 812.732 Meg
+
+Wed Sep 25 05:00:03 2013
+

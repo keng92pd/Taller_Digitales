@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2013-09-22T18:53:05</DateModified>
-  <ModuleName>ComprobadorDeMemoria</ModuleName>
+  <DateModified>2013-10-04T02:11:31</DateModified>
+  <ModuleName>MaquinaEstados</ModuleName>
   <SummaryTimeStamp>2013-09-22T18:36:08</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/Kenneth/Laboratorio3/iseconfig/MaquinaEstados.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Kenneth/Laboratorio3\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Zeck/Desktop/Repositorio_Kenneth/Laboratorio3/iseconfig/MaquinaEstados.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Zeck/Desktop/Repositorio_Kenneth/Laboratorio3\</ImplementationReportsDirectory>
   <DateInitialized>2013-09-22T18:53:05</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

@@ -21,7 +21,7 @@
 module Laboratorio3(input clk, input [1:0] interruptor, input reset,
 		inout [15:0] datoSalida, output [17:0] direccionS, output WE , output [3:0] DisplayS,
 		output [6:0] SieteSegmentosS, output puntoS, output [1:0] LEDSlecturaEscrituraSalida,
-		output [1:0] LEDsExitoFalloS, output [3:0] ceros
+		output [1:0] LEDsExitoFalloS, output [3:0] ceros, output [1:0] resultadoS
 		);
 
 wire clk5Hz;
@@ -53,27 +53,27 @@ end
 
 always @ (DatosConTodasSalidas)
 begin
-	datos = DatosConTodasSalidas[3:0];
+	//datos = DatosConTodasSalidas[3:0];
 end
 	
-assign datosWire = datos;
+//assign datosWire = datos;
 	
-DivisorFrecuencia5Hz DivisorFrecuenciaFSM (clk, clk5Hz);
-DivisorFrecuenciaDisplay DivisorFrecuenciaDis(clk, clkDisplay);
+//DivisorFrecuencia5Hz DivisorFrecuenciaFSM (clk, clk5Hz);
+//DivisorFrecuenciaDisplay DivisorFrecuenciaDis(clk, clkDisplay);
 
 //DivisorFrecuenciaMemoria DivisorFrecuenciaMem (clk, clkMemoria);
 
-ComprobadorDeMemoria Comprobador (clk5Hz, interruptor, reset, datosWire, direccion, write_enable, resultado); 
-Display LEDS(clkDisplay, write_enable, resultado, direccion, datosWire, Display, SieteSegmentos, punto,
- LEDsLecturaEscritura, LEDsExitoFallo);
+ComprobadorDeMemoria Comprobador (clk, interruptor, reset, datosWire, direccion, write_enable, resultado); 
+//Display LEDS(clkDisplay, write_enable, resultado, direccion, datosWire, Display, SieteSegmentos, punto,
+ //LEDsLecturaEscritura, LEDsExitoFallo);
 
 
-//MEMORIA memoriaRAM(write_enable, direccion, datos);
-//MemoriaRAM memoriaRAM(clkMemoria, direccion, datos, 1'b0, write_enable, 1'b0);
+MEMORIA memoriaRAM(write_enable, direccion, datosWire);
+//MemoriaRAM memoriaRAM(clk, direccion, datosWire, 1'b0, write_enable, 1'b0);
 
 
 //Display y LEDs
-
+assign resultadoS = resultado;
 assign DisplayS = Display;
 assign SieteSegmentosS = SieteSegmentos;
 assign puntoS = punto;

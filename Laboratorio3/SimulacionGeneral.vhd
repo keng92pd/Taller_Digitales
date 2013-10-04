@@ -32,6 +32,7 @@ USE ieee.std_logic_1164.ALL;
 -- arithmetic functions with Signed or Unsigned values
 --USE ieee.numeric_std.ALL;
  
+ 
 ENTITY SimulacionGeneral IS
 END SimulacionGeneral;
  
@@ -44,9 +45,7 @@ ARCHITECTURE behavior OF SimulacionGeneral IS
          clk : IN  std_logic;
          interruptor : IN  std_logic_vector(1 downto 0);
          reset : IN  std_logic;
-         resultadoS : OUT  std_logic_vector(1 downto 0);
-         datoS : OUT  std_logic_vector(3 downto 0);
-         direccionS : OUT  std_logic_vector(3 downto 0)
+         resultadoS : OUT  std_logic_vector(1 downto 0)
         );
     END COMPONENT;
     
@@ -58,11 +57,10 @@ ARCHITECTURE behavior OF SimulacionGeneral IS
 
  	--Outputs
    signal resultadoS : std_logic_vector(1 downto 0);
-   signal datoS : std_logic_vector(3 downto 0);
-   signal direccionS : std_logic_vector(3 downto 0);
+
 
    -- Clock period definitions
-   constant clk_period : time := 20 ns;
+   constant clk_period : time := 200 ms;
  
 BEGIN
  
@@ -71,9 +69,7 @@ BEGIN
           clk => clk,
           interruptor => interruptor,
           reset => reset,
-          resultadoS => resultadoS,
-          datoS => datoS,
-          direccionS => direccionS
+          resultadoS => resultadoS
         );
 
    -- Clock process definitions

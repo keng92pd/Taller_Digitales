@@ -1,0 +1,29 @@
+Command line:
+   TEST_isim_translate.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  56482
+
+Wed Sep 25 04:33:28 2013
+
+
+ Elaboration Time: 0.078 sec
+
+ Current Memory Usage: 812.54 Meg
+
+ Total Signals          : 13
+ Total Nets             : 61
+ Total Signal Drivers   : 2
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 2
+ Total Traceable Variables  : 9
+ Total Scalar Nets and Variables : 422
+Total Line Count : 7
+
+ Total Simulation Time: 0.452403 sec
+
+ Current Memory Usage: 812.54 Meg
+
+Wed Sep 25 04:33:42 2013
+

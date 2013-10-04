@@ -50,7 +50,7 @@ s9 = 5'b1001,
 s10 = 5'b1010,
 s11 = 5'b1011;
 
-always@(state or datos_iguales)
+always@(state or datos_iguales or clk)
 begin
 next_state=s0;
 case(state)
